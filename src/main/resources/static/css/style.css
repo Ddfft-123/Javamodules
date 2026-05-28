@@ -1,0 +1,25 @@
+/* Меняем фон всей страницы */
+body {
+    background-color: #CDC7E5;
+}
+/* Меняем фон карточки с контактами */
+.card {
+    background-color: #7776BC;
+    border-radius: 15px;
+}
+/* Меняем цвет сверху */
+.navbar {
+    background-color: #7776BC !important;
+}
+/* Меняем цвет кнопки на главной странице */
+.btn-custom {
+    background-color: #7776BC;
+    border-color: #7776BC;
+    color: #FFFBDB;
+}
+
+.btn-custom:hover {
+    background-color: #FFFBDB;  /* цвет при наведении мышки */
+    border-color: #FFFBDB;
+    color: #7776BC;
+}

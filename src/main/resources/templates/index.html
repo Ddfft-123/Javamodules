@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title th:text="${pageTitle}">Help Desk</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+        <a class="navbar-brand" th:href="@{/}">Help Desk</a>
+        <div class="navbar-nav">
+            <a class="nav-link" th:href="@{/}">Главная</a>
+            <a class="nav-link" th:href="@{/about}">О нас</a>
+            <a class="nav-link" th:href="@{/contacts}">Контакты</a>
+        </div>
+    </div>
+</nav>
+
+<div class="container mt-5 text-center">
+    <h1 th:text="${welcomeMessage}">Добро пожаловать!</h1>
+    <p class="lead">Создайте заявку, и мы поможем вам</p>
+    <a th:href="@{/contacts}" class="btn btn-custom btn-lg">Связаться с поддержкой</a>
+</div>
+
+</body>
+</html>
