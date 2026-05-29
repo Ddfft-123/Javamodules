@@ -24,4 +24,9 @@ public class PageController {
         model.addAttribute("phone", "+7 (999) 999-99-99");
         return "contacts";
     }
+    @GetMapping("/faq")
+    public String faq(Model model) {
+        model.addAttribute("pageTitle", "Частые вопросы");
+        return "faq";
+    }
 }

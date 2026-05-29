@@ -10,11 +10,15 @@
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
     <div class="container">
-        <a class="navbar-brand" th:href="@{/}">Help Desk</a>
+            <a class="navbar-brand" th:href="@{/}">
+                ˗ˏˋ ♡ ˎˊ˗ Help Desk
+            </a>
+        </a>
         <div class="navbar-nav">
             <a class="nav-link" th:href="@{/}">Главная</a>
             <a class="nav-link" th:href="@{/about}">О нас</a>
             <a class="nav-link" th:href="@{/contacts}">Контакты</a>
+            <a class="nav-link" th:href="@{/faq}">FAQ</a>
         </div>
     </div>
 </nav>
@@ -23,6 +27,36 @@
     <h1 th:text="${welcomeMessage}">Добро пожаловать!</h1>
     <p class="lead">Создайте заявку, и мы поможем вам</p>
     <a th:href="@{/contacts}" class="btn btn-custom btn-lg">Связаться с поддержкой</a>
+</div>
+
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Регистрация обращений</h5>
+                    <p class="card-text">Создавайте заявки в несколько кликов</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body text-center">
+                    <h5 class="card-title"> Приоритизация задач</h5>
+                    <p class="card-text">Важные заявки обрабатываются в первую очередь</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body text-center">
+                    <h5 class="card-title">База знаний</h5>
+                    <p class="card-text">Ответы на частые вопросы</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 </body>

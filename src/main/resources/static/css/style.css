@@ -23,3 +23,44 @@ body {
     border-color: #FFFBDB;
     color: #7776BC;
 }
+
+.accordion {
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+/* Кнопка вопроса (закрытая) */
+.accordion-button {
+    background-color: #7776BC;
+    color: #FFFBDB;
+    font-weight: bold;
+}
+
+/* Кнопка вопроса при наведении */
+.accordion-button:hover {
+    background-color: #CDC7E5;
+    color: #7776BC;
+}
+
+/* Кнопка вопроса (открытая) */
+.accordion-button:not(.collapsed) {
+    background-color: #CDC7E5;
+    color: #7776BC;
+}
+
+/* Область с ответом */
+.accordion-body {
+    background-color: #FFFBDB;
+    color: #7776BC;
+    border-left: 3px solid #7776BC;
+}
+
+/* Стрелочка у кнопки */
+.accordion-button::after {
+    filter: brightness(0) invert(1);
+}
+
+/* Стрелочка у открытой кнопки */
+.accordion-button:not(.collapsed)::after {
+    filter: brightness(0);
+}
