@@ -64,3 +64,57 @@ body {
 .accordion-button:not(.collapsed)::after {
     filter: brightness(0);
 }
+/* ===== Стили для таблицы Заявочкек ===== */
+
+/* Заголовок таблицы */
+.table thead th {
+    background-color: #7776BC !important;
+    color: #FFFBDB !important;
+    font-weight: bold;
+    border-bottom: none;
+}
+
+/* Чередование строк таблицы */
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #CDC7E5;
+}
+
+.table-striped tbody tr:nth-of-type(even) {
+    background-color: #FFFBDB;
+}
+
+/* Строка при наведении */
+.table tbody tr:hover {
+    background-color: #b8b4e0 !important;
+    transition: 0.3s;
+}
+
+/* Ячейки таблицы */
+.table td {
+    color: #4a4870;
+    vertical-align: middle;
+}
+
+/* Бейджики статусов  */
+.badge.bg-warning {
+    background-color: #e0b84d !important;
+    color: #4a4870;
+}
+
+.badge.bg-primary {
+    background-color: #7776BC !important;
+    color: #FFFBDB;
+}
+
+.badge.bg-success {
+    background-color: #9b9b5a !important;
+    color: #FFFBDB;
+}
+
+/* Заголовок страницы "Список заявочек" */
+.container.mt-5 h1 {
+    color: #7776BC;
+    font-weight: bold;
+    border-left: 5px solid #7776BC;
+    padding-left: 15px;
+}
