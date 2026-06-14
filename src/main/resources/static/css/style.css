@@ -28,7 +28,22 @@ body {
     border-radius: 15px;
     overflow: hidden;
 }
+/* Кастомная кнопка (фиолетовая, бежевый текст) */
+.btn-custom {
+    background-color: #7776BC;
+    border-color: #7776BC;
+    color: #FFFBDB;
+    border-radius: 30px;
+    padding: 12px 30px;
+    font-weight: bold;
+    transition: 0.3s;
+}
 
+.btn-custom:hover {
+    background-color: #FFFBDB;
+    border-color: #FFFBDB;
+    color: #7776BC;
+}
 /* Кнопка вопроса (закрытая) */
 .accordion-button {
     background-color: #7776BC;
@@ -117,4 +132,43 @@ body {
     font-weight: bold;
     border-left: 5px solid #7776BC;
     padding-left: 15px;
+}
+/* Красивые кнопки */
+.btn-primary {
+    background-color: #7776BC;
+    border-color: #7776BC;
+    border-radius: 30px;
+    padding: 12px 30px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #5a58a0;
+    border-color: #5a58a0;
+    transform: scale(1.02);
+}
+
+.btn-outline-primary {
+    border-color: #7776BC;
+    color: #7776BC;
+    border-radius: 30px;
+    padding: 12px 30px;
+    font-weight: bold;
+}
+
+.btn-outline-primary:hover {
+    background-color: #7776BC;
+    color: white;
+}
+/* Уведомление об успешной заявке */
+.alert-custom {
+    background-color: #FFFBDB;
+    color: #7776BC;
+    border-left: 5px solid #7776BC;
+}
+
+.alert-custom .badge {
+    background-color: #7776BC;
+    color: #FFFBDB;
 }

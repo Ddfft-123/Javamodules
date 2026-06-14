@@ -41,11 +41,11 @@
             <td th:text="${ticket.customerName}">Имя</td>
             <td th:text="${ticket.title}">Тема</td>
             <td th:text="${ticket.status}"></td>
-            <td th:text="${ticket.createdAt}">2026-05-28</td>
+            <td th:text="${#strings.substring(ticket.createdAt.toString().replace('T', ' '), 0, 16)}">2026-05-28 10:00</td>
         </tr>
         </tbody>
     </table>
-    <a th:href="@{/}" class="btn btn-secondary">На главную</a>
+    <a th:href="@{/}" class="btn btn-custom">На главную</a>
 </div>
 
 </body>

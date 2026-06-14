@@ -26,7 +26,10 @@
 
 <div class="container mt-5 text-center">
     <h1 th:text="${welcomeMessage}">Добро пожаловать!</h1>
-    <p class="lead">Создайте заявку, и мы поможем вам</p>
+    <p class="lead">Создайте заявочку, и мы поможем вам</p>
+</div>
+<div class="d-flex gap-3 justify-content-center mt-4">
+    <a th:href="@{/tickets/new}" class="btn btn-custom btn-lg">Создать заявочку</a>
     <a th:href="@{/contacts}" class="btn btn-custom btn-lg">Связаться с поддержкой</a>
 </div>
 
@@ -37,7 +40,7 @@
             <div class="card h-100 shadow-sm">
                 <div class="card-body text-center">
                     <h5 class="card-title">Регистрация обращений</h5>
-                    <p class="card-text">Создавайте заявки в несколько кликов</p>
+                    <p class="card-text">Создавайте заявочки в несколько кликов</p>
                 </div>
             </div>
         </div>

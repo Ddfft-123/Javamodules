@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Заявка принята | Help Desk</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+        <a class="navbar-brand" th:href="@{/}">
+            ˗ˏˋ ♡ ˎˊ˗ Help Desk
+        </a>
+        <div class="navbar-nav">
+            <a class="nav-link" th:href="@{/}">Главная</a>
+            <a class="nav-link" th:href="@{/tickets}">Заявочки</a>
+            <a class="nav-link" th:href="@{/about}">О нас</a>
+            <a class="nav-link" th:href="@{/contacts}">Контакты</a>
+            <a class="nav-link" th:href="@{/faq}">FAQ</a>
+        </div>
+    </div>
+</nav>
+
+<div class="container mt-5">
+    <div class="alert shadow-sm" style="background-color: #FFFBDB; color: #7776BC; border-left: 5px solid #7776BC;">
+        <h1 class="alert-heading">Спасибо, ваша заявочка принята!</h1>
+        <p class="mb-2">
+            Номер вашей заявочки:
+            <strong th:text="${ticket.id}">1</strong>
+        </p>
+        <p class="mb-2">
+            Тема: <span th:text="${ticket.title}"></span>
+        </p>
+        <p class="mb-0">
+            Статус:
+            <span class="badge bg-primary" th:text="${ticket.status}">NEW</span>
+        </p>
+    </div>
+    <div class="d-flex gap-2">
+        <a th:href="@{/tickets}" class="btn btn-custom">Посмотреть все заявочки</a>
+        <a th:href="@{/tickets/new}" class="btn btn-custom">Создать ещё одну</a>
+    </div>
+</div>
+
+</body>
+</html>
