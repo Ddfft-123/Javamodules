@@ -20,11 +20,12 @@ public class TicketController {
         this.ticketService = ticketService;
     }
 
-    @GetMapping
-    public String listTickets(Model model) {
-        model.addAttribute("tickets", ticketService.getAllTickets());
-        return "tickets";
-    }
+//    @GetMapping
+//    public String listTickets(Model model) {
+//        model.addAttribute("tickets", ticketService.getAllTickets());
+//        return "tickets";
+//    }
+
 
     @GetMapping("/new")
     public String showCreateForm(@Nonnull Model model) {
